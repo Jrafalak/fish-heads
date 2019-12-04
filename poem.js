@@ -3,7 +3,7 @@
                   spanish not the best toes brush cold bones bloated disembodied                                            backpack
               all that way for the land of the whale killers from the maya valley of                                    what was to
           this dirty city of what used to be gangs of fishing boats the winches of each                              assassin wait
-      in a bay  (of)  bad omen a canopy of impaling rust biding time what history whose grandfather               he’s just a boy
+      in a bay     of bad omen a canopy of impaling rust biding time what history whose grandfather               he’s just a boy
   arranging piles of guts make a slit oozing     fish blood factory     boy welcome to the home of the          whalers  scales 
 like gold teet embroidery under nails for    the coyote make back what    he owes uses his other name makes me a promise he’ll 
 get to school where’s his mother do not    be late where’s his mother     miss the bus take the test pretends he understands a
@@ -15,11 +15,11 @@ get to school where’s his mother do not    be late where’s his mother     mi
                              your hands, tongue they should be burning `
                              
                              
-                                          const spanish = `
+                                       const spanish = `
                        dice  nadar  río  grande  desierto  caminar  bien                                                                 mi 
-              español no es el mejor dedos del pie cepillo huesos fríos hinchados mochila sin                                        cuerpo
+              español no es el mejor dedos del pie cepillo huesos fríos hinchados mochila sin                                        cuerpo 
           todo  ese  camino  por  la  tierra  de  los  asesinos  de  ballenas  del  valle  maya  de  lo                          que era a 
-      esta (X) ciudad sucia de lo que solía ser pandillas de barcos de pesca los tornos de cada asesino esperar             en una bahía 
+      esta     ciudad sucia de lo que solía ser pandillas de barcos de pesca los tornos de cada asesino esperar             en una bahía 
    de mal augurio un dosel de tiempo    de espera de     óxido empalado que historia cuyo abuelo él es solo un niño arreglando montones 
 de tripas hacer una hendidura que       supura sangre de      pescado chico de fábrica bienvenido a la casa de los balleneros escamas 
 como dientes de oro bordado debajo de      las uñas para el       coyote recuperar lo que debe usa su otro nombre me hace una promesa él 
@@ -33,157 +33,47 @@ llegará a la escuela donde esta su madre no     llegues tarde donde      esta s
                     no vendrá y tú tus manos lengua deben estar ardiendo `
 
 
+                    function 
+            c(t){t?console.log(t):console.log()                    }
+         function redact(){var t=spanish.split(                " ")
+      .filter(   function(t){return""!=t&&"\n"!=t&&"\t"   !=t&&" "
+   !=t});let e=Math.floor(Math.random()*t.length),l=t[e],n="";for(
+      let t=0;t<l.length;t++)n+="-";let o=spanish.replace(l,n);l=t[e
+         =Math.floor(Math.random()*t.length)],n="";for(let     t=0;t<
+            l.length;t++)n+="-";c(o.replace(l,n)),                 c()}
+               setInterval(()=>{redact()},300);
 
-         function log20(){for(let i=0; i<20; i++)             {
-      console.log()}}setInterval(function()                 {
-   console.log(english);log20()},500)                      ;
-  setTimeout(function()                                 {
-   setInterval(function() {
-         console.log(spanish);
-         log20()
-      }, 500)
-   }, 250)
-
-
-
-
-// function log20() {
-//    for(let i=0; i<20; i++) {
-//       console.log()
-//    }
+// function c(p) {
+//    p ? console.log(p) : console.log()
 // }
 
-// setInterval(function(){
-//    console.log(english);
-//    log20()
-// },500);
+// function redact() {
+//    var words = spanish.split(" ")
+//    var filtered = words.filter(function (el) {
+//       return ((el != "") && (el != "\n") && (el != "\t") && (el != " "));
+//    });
 
-// setTimeout(function(){
-//    setInterval(function() {
-//       console.log(spanish);
-//       log20()
-//    }, 500)
-// }, 250)
+//    let rand = Math.floor((Math.random()*filtered.length))
+//    let word = filtered[rand]
+//    let redacted = "";
+//    for (let i = 0; i < word.length; i++) {
+//       redacted += "-"  
+//    }
+//    let firstRedacted = spanish.replace(word, redacted)
 
+//    rand = Math.floor((Math.random()*filtered.length))
+//    word = filtered[rand]
+//    redacted = "";
+//    for (let i = 0; i < word.length; i++) {
+//       redacted += "-"  
+//    }
+//    let secondRedacted = firstRedacted.replace(word, redacted)
+//    c(secondRedacted)
 
-function wave1(){
-   log20()
-   console.log("   _.====.._    ")
-}
+//    c()
+// }
 
-function wave2(){
-   log20()
-   console.log("     _.====.._")
-   console.log("   _~-      _.:,")
-}
-
-function wave3(){
-   log20()
-   console.log("      _.====.._")
-   console.log("    _~-      _.:,")
-   console.log("   /   /  / (")
-}
-
-function wave4(){
-   log20()
-   console.log("       _.====.._")
-   console.log("     _~-      _.:,")
-   console.log("    /   /  / (")
-   console.log("   /           `.   ")
-}
-
-function wave5(){
-   log20()
-   console.log("          _.====.._")
-   console.log("        _~-      _.:,")
-   console.log("       /   /  / (")
-   console.log("      /           `.   ")
-   console.log("    ,/ /  / /      ~-_ ")
-}
-
-function wave6(){
-   log20()
-   console.log("            _.====.._")
-   console.log("          _~-      _.:,")
-   console.log("         /   /  / (")
-   console.log("        /           `.   ")
-   console.log("      ,/ /  / /      ~-_ ")
-   console.log("    ..__..-''~~--..__...-._")
-}
-
-function wave7(){
-   log20()
-   console.log("            _.====.._");
-   console.log("          _~-      _.:,")
-   console.log("         /   /  / (")
-   console.log("       /           `.")
-   console.log("     ,/ /  / /      ~-_")
-   console.log("  ..-''  \_ \_\ `_       ._")
-}
-
-function wave8(){
-   log20()
-   console.log("            __. -- .__");
-   console.log("          _~~      _..,")
-   console.log("         /   /  ( (")
-   console.log("       /           `.")
-   console.log("     ,/ /  / /      ~-_")
-   console.log(" ..-''  \_ \_\ `_       ._")
-}
-
-function wave9(){
-   log20()
-   console.log("             ____");
-   console.log("         _~~      _")
-   console.log("        /   /     _..,")
-   console.log("      ,/ /  / /      ~-_")
-   console.log("  ..-''  \_ \_\ `_       ._")
-}
-
-function wave10(){
-   log20()
-   console.log("         _~~~==~~_")
-   console.log("       /   /     _..,")
-   console.log("   ..- \_ \_\ `_     .")
-}
-
-function wave11(){
-   log20()
-   console.log("      _~~~==~~_")
-   console.log("   ...-       -...")
-}
-
-function wave12(){
-   log20()
-   console.log("       _~~~==~~_")
-}
-
-function wave13(){
-   log20()
-   console.log("          ;")
-}
-
-function wave14(){
-   log20()
-   console.log()
-}
-
-function waves() {
-   setTimeout(wave1, 100)
-   setTimeout(wave2, 200)
-   setTimeout(wave3, 300)
-   setTimeout(wave4, 400)
-   setTimeout(wave5, 500)
-   setTimeout(wave6, 600)
-   setTimeout(wave7, 700)
-   setTimeout(wave8, 800)
-   setTimeout(wave9, 900)
-   setTimeout(wave10, 1000)
-   setTimeout(wave11, 1100)
-   setTimeout(wave12, 1200)
-   setTimeout(wave13, 1300)
-   setTimeout(wave14, 1400)
-}
-
-// setInterval(waves, 1500);
+// setInterval(() => {
+//    redact()
+// }, 300);
 
