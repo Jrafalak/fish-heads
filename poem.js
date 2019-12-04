@@ -1,17 +1,17 @@
                                        const english =`
-                          he says swim big river desert walk okay                                                               my
-                  spanish not the best toes brush cold bones bloated disembodied                                            backpack
-              all that way for the land of the whale killers from the maya valley of                                    what was to
-          this dirty city of what used to be gangs of fishing boats the winches of each                              assassin wait
-      in a bay     of bad omen a canopy of impaling rust biding time what history whose grandfather               he’s just a boy
+                          he says swim big river desert walk okay                                                               my 
+                  spanish not the best toes brush cold bones bloated disembodied                                            backpack 
+              all that way for the land of the whale killers from the maya valley of                                    what was to 
+          this dirty city of what used to be gangs of fishing boats the winches of each                              assassin wait 
+      in a bay     of bad omen a canopy of impaling rust biding time what history whose grandfather               he’s just a boy 
   arranging piles of guts make a slit oozing     fish blood factory     boy welcome to the home of the          whalers  scales 
 like gold teet embroidery under nails for    the coyote make back what    he owes uses his other name makes me a promise he’ll 
-get to school where’s his mother do not    be late where’s his mother     miss the bus take the test pretends he understands a
+get to school where’s his mother do not    be late where’s his mother     miss the bus take the test pretends he understands a 
    fish’s head is caught in an old black     knife dull blade too poor    for lucky strikes where’s his        mother    she’s 
       at the border she’s at home which home     she’s dead waiting    for the mail he’s a pile of                guts a dream 
-           caught in a dream hooked in a dream    tongue-tied       sinking deeper in the                              swinging
-              waters he signs here (you chatter from       the deck the population’s in                                 decline)
-                i’ll make a nice verse when it’s plain the surface won’t come                                              and you
+           caught in a dream hooked in a dream    tongue-tied       sinking deeper in the                              swinging 
+              waters he signs here (you chatter from       the deck the population’s in                                 decline) 
+                i’ll make a nice verse when it’s plain the surface won’t come                                              and you 
                              your hands, tongue they should be burning `
                              
                              
@@ -33,47 +33,50 @@ llegará a la escuela donde esta su madre no     llegues tarde donde      esta s
                     no vendrá y tú tus manos lengua deben estar ardiendo `
 
 
-                    function 
-            c(t){t?console.log(t):console.log()                    }
-         function redact(){var t=spanish.split(                " ")
-      .filter(   function(t){return""!=t&&"\n"!=t&&"\t"   !=t&&" "
-   !=t});let e=Math.floor(Math.random()*t.length),l=t[e],n="";for(
-      let t=0;t<l.length;t++)n+="-";let o=spanish.replace(l,n);l=t[e
-         =Math.floor(Math.random()*t.length)],n="";for(let     t=0;t<
-            l.length;t++)n+="-";c(o.replace(l,n)),                 c()}
-               setInterval(()=>{redact()},300);
+   //                  function 
+   //          c(t){t?console.log(t):console.log()                    }
+   //       function redact(){var t=spanish.split(                " ")
+   //    .filter(   function(t){return""!=t&&"\n"!=t&&"\t"   !=t&&" "
+   // !=t});let e=Math.floor(Math.random()*t.length),l=t[e],n="";for(
+   //    let t=0;t<l.length;t++)n+="-";let o=spanish.replace(l,n);l=t[e
+   //       =Math.floor(Math.random()*t.length)],n="";for(let     t=0;t<
+   //          l.length;t++)n+="-";c(o.replace(l,n)),                 c()}
+   //             setInterval(()=>{redact()},300);
 
-// function c(p) {
-//    p ? console.log(p) : console.log()
-// }
+function c(p) {
+   p ? console.log(p) : console.log()
+}
 
-// function redact() {
-//    var words = spanish.split(" ")
-//    var filtered = words.filter(function (el) {
-//       return ((el != "") && (el != "\n") && (el != "\t") && (el != " "));
-//    });
+function redact(language) {
+   var words = language.split(" ")
+   var filtered = words.filter(function (el) {
+      return ((el != "") && (el != "\n") && (el != "\t") && (el != " "));
+   });
 
-//    let rand = Math.floor((Math.random()*filtered.length))
-//    let word = filtered[rand]
-//    let redacted = "";
-//    for (let i = 0; i < word.length; i++) {
-//       redacted += "-"  
-//    }
-//    let firstRedacted = spanish.replace(word, redacted)
+   let rand = Math.floor((Math.random()*filtered.length))
+   let word = filtered[rand]
+   let redacted = "";
+   for (let i = 0; i < word.length; i++) {
+      redacted += "-"  
+   }
+   let firstRedacted = language.replace(word, redacted)
 
-//    rand = Math.floor((Math.random()*filtered.length))
-//    word = filtered[rand]
-//    redacted = "";
-//    for (let i = 0; i < word.length; i++) {
-//       redacted += "-"  
-//    }
-//    let secondRedacted = firstRedacted.replace(word, redacted)
-//    c(secondRedacted)
+   rand = Math.floor((Math.random()*filtered.length))
+   word = filtered[rand]
+   redacted = "";
+   for (let i = 0; i < word.length; i++) {
+      redacted += "-"  
+   }
+   let secondRedacted = firstRedacted.replace(word, redacted)
+   c(secondRedacted)
 
-//    c()
-// }
+   c()
+}
 
-// setInterval(() => {
-//    redact()
-// }, 300);
+setInterval(() => {
+   redact(english)
+   c()
+   c()
+   redact(spanish)
+}, 300);
 
